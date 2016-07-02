@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+        
+          #player{
+         margin-left: 300px !important;
+        }
+        .navbar-collapse.collapse {
+  display: block!important;
+}
+
+.navbar-nav>li, .navbar-nav {
+  float: left !important;
+}
+
+.navbar-nav.navbar-right:last-child {
+  margin-right: -15px !important;
+}
+
+.navbar-right {
+  float: right!important;
+}
+    </style>
+<title>feeling happy|Mood-Singer by Tiger</title>   
+    <link rel=icon href="images/happy.ico">
+     <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    
+    <!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Include meta tag to ensure proper rendering and touch zooming -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top" >
+        
+     <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">Mood-Singer</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="app.html">Home</a></li>
+      <li><a href="happy.html">Feeling Happy?</a></li> 
+    
+             <li><a href="sad.html">Feeling Sad?</a></li> 
+        <li><a href="bored.html">Feeling Bored?</a></li>
+      <li><a href="nervous.html">Feeling Nervous?</a></li> 
+    
+    </ul>   </nav>        
+        <h2 style="margin-top:100px;">Feeling Happy?Great! Let's stay in that Mood.Listen to some of these tunes</h2>
+        <h4>1)Pharell Williams-Happy</h4>
+        <div id="player"></div>
+        <h4 >2)Ed Sheeran-Thinking Out Loud</h4>
+        <div style="margin-left: 300px !important;" id="player2"></div>
+        <h4>3)Maroon5-Sugar</h4>
+        <div style="margin-left: 300px !important;" id="player3"></div>
+        <script>
+          var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var playerInfoList = [{
+    id: 'player',
+    height: '390',
+    width: '640',
+    videoId: 'C7dPqrmDWxs'
+
+}, {
+    id: 'player2',
+    height: '390',
+    width: '640',
+    videoId: 'WpyfrixXBqU'
+},{
+    id:'player3',
+    height:'390',
+    width:'640',
+    videoId:'09R8_2nJtjg'
+    
+}];
+
+function onYouTubeIframeAPIReady() {
+    if (typeof playerInfoList === 'undefined') return;
+    
+    for (var i = 0; i < playerInfoList.length; i++) {
+        var curplayer = createPlayer(playerInfoList[i]);
+        players[i] = curplayer;
+    }
+}
+
+var players = new Array();
+
+function createPlayer(playerInfo) {
+    return new YT.Player(playerInfo.id, {
+        height: playerInfo.height,
+        width: playerInfo.width,
+        videoId: playerInfo.videoId,
+    });
+}
+
+            
+        </script>
+    </body>
+
+</html>
