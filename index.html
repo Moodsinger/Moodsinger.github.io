@@ -37,7 +37,13 @@
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <link rel="stylesheet" href="/resources/demos/style.css">
-
+ <script>
+            $(function() {
+                if (screen.width<=800){
+    $( "#dialog").dialog();
+                }
+  });
+        </script>
  
     </head>
     <body>
@@ -69,13 +75,7 @@
           You will see our website but with a lot of errors. We are sory :(</p>
           </div>
         </div>
-        <script>
-            $(function() {
-                if (screen.width<=800){
-    $( "#dialog").dialog();
-                }
-  });
-        </script>
+       
             </body>
 
 </html>
