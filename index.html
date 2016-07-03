@@ -33,7 +33,10 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
    <!-- Include meta tag to ensure proper rendering and touch zooming -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+ <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
 
  
     </head>
@@ -61,10 +64,18 @@
           <h3 style="margin-left:500px;padding-top:20px;">By The Best For The Best </h3>
           <p style="margin-left:340px;">Mood Singer has the the best music by the best artist (green day,sia,ed sheeran and more). For the best listeners.</p>
         </div>
-          <div id="footer">
-          
+          <div id="dialog" title="Phone Compatibality error">
+         <p> We Regret this inconvenience but it seems like you are viewing Mood Singer in a screen with a width of lesser than 800 pixels.
+          You will see our website but with a lot of errors. We are sory :(</p>
           </div>
         </div>
+        <script>
+            $(function() {
+                if (screen.width<=800){
+    $( "#dialog").dialog();
+                }
+  });
+        </script>
             </body>
 
 </html>
