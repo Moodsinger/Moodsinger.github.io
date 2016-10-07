@@ -8,21 +8,7 @@
             width:200px;
             
         }
-               .navbar-collapse.collapse {
-  display: block!important;
-}
-
-.navbar-nav>li, .navbar-nav {
-  float: left !important;
-}
-
-.navbar-nav.navbar-right:last-child {
-  margin-right: -15px !important;
-}
-
-.navbar-right {
-  float: right!important;
-}
+             
     </style>
     <!--the following are links do not suck your head into them you will most probably become crazy-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
@@ -42,23 +28,28 @@
 <LINK REL = "stylesheet" href="myfont.css">   
     </head>
     <body>
-       <div  class="container-fluid">
-             <nav class="navbar navbar-default navbar-fixed-top" >
-     <div class="navbar-header">
-      <a class="navbar-brand" href="index.html">Mood-Singer</a>
+      <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Mood singer</a>
     </div>
-    <ul class="nav navbar-nav">
-      <li ><a href="app.html">Home</a></li>
-      <li><a href="happy.html">Feeling Happy?</a></li> 
-          <li><a href="sad.html">Feeling Sad?</a></li> 
-        <li><a href="bored.html">Feeling Bored?</a></li>
-      <li><a href="nervous.html">Feeling Nervous?</a></li> 
-    
-    </ul>
-  
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="app.html">Home</a></li>
+
+        <li><a href="nervous.html">Feeling Nervous ?</a></li>
+        <li><a href="bored.html">Feeling Bored ?</a></li>        
+        <li><a href="sad.html">Feeling Sad ?</a></li>
+        <li><a href="happy.html">Feeling Happy?</a></li>
+   </ul>
+   </div>
 </nav>
-         
-           <div class="jumbotron"><h1>Mood Singer</h1>
+  
                <P id="jump"> An App which plays music according to your mood.Just so you don't have to visit 1000 websites or roam youtube.Fast and not like anything else.</P></div>
             <table>
            <tr><td><img src="images/happy.png"/></td><td><a href="happy.html">Feeling Happy?</a><p>Feeling Happy ? Wunderbar! we will try our best to keep you in that mood and remember stay happy always.</p></td></tr>
