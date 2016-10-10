@@ -29,6 +29,10 @@
     <loc>https://moodsinger.github.io/index.html</loc>
     <changefreq>weekly</changefreq>
   </url>
+  <url>
+    <loc>https://moodsinger.github.io/romantic.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
 </urlset>
 <!--<guid value="16f6c918-57e1-4bf9-b861-dc2e5a3e628f" />-->
 <!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
