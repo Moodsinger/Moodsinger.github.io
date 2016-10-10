@@ -1,1 +1,128 @@
 
+<!doctype html>
+<html>
+<head>
+    <style>
+  
+        
+       .navbar .in .nav li {
+   display: block;
+   float: none;
+   width:100%;
+}   
+    </style>
+<title>feeling Romantic|Mood-Singer by BEH!ND</title>   
+     <!--the following are links do not suck your head into them you will most probably become crazy-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <link rel=icon href="images/happy.ico">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!--my styles-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    
+       <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <!-- Include meta tag to ensure proper rendering and touch zooming -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<LINK REL = "stylesheet" href="myfont.css">   
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>   
+<script type="text/javascript" src="http://twitter.github.io/bootstrap/assets/js/bootstrap-transition.js"></script>
+<script type="text/javascript" src="http://twitter.github.io/bootstrap/assets/js/bootstrap-collapse.js"></script>
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>  
+</head>
+    <body>
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Mood singer</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="app.html">Home</a></li>
+
+        <li><a href="nervous.html">Feeling Nervous ?</a></li>
+        <li><a href="bored.html">Feeling Bored ?</a></li>        
+        <li><a href="sad.html">Feeling Sad ?</a></li>
+        <li><a href="happy.html">Feeling Happy?</a></li>
+   </ul>
+   </div>
+</nav>
+        <h2 style="margin-top:70px;">Chillax and dont freak out with some anxiety busters and confidence boosters</h2>
+  <h4>1)Roses- Chainsmokers ft. ROZES</h4>
+        <strong>Nominations</strong><p>MuchMusic Video Award for iHeartRadio International Duo or Group of the Year,Billboard Music Award for Top Dance/Electronic Song,</p>
+      <center><div id="player"></div></center>
+      
+        <h4>2)The weeknd-Earned it.</h4>
+        <strong>Nominations</strong><p>Grammy Award for Best R&B Performance,MuchMusic Video Award for Most Buzzworthy Canadian,BET Centric Award,MuchMusic Video Award for Pop Video of the Year,iHeartRadio Music Award for R&B Song of the Year</p>
+      <center><div id="player1"></div>          </center>
+        <H4>3)Maroon 5-She will be loved </H4>
+        <strong>Nominations </strong><p>Grammy Award for Best Pop Performance by a Duo or Group with Vocals,MuchMusic Video Award for People's Choice: Favorite International Group</p>
+      <center><div id="player2"></div></center>
+        <h4>4)James Blunt- You're beautiful</h4>
+        <strong>Nominations</strong><p>Grammy Award for Song of the Year,Grammy Award for Record of the Year,MuchMusic Video Award for iHeartRadio International Artist of the Year,MTV Video Music Award for Best New Artist,Brit Award for British Single,Grammy Award for Best Male Pop Vocal Performance,MTV Europe Music Award for Best Song,Danish Music Award for International Hit of the Year,MuchMusic Video Award for Peoples Choice: Favourite International Artist,MTV Australia Award for Best Male Artist</p>
+      <center><div id="player3"></div></center>
+         <h4>5)Jason Mraz-I'm Yours</h4>
+        <strong>FYI</strong><p>Grammy Award for Song of the Year,Grammy Award for Best Male Pop Vocal Performance</p>
+      <center> <div id="player4"></div></center>
+      
+      
+        <script>
+        var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+var playerInfoList = [{
+    id: 'player1',
+    height: '390',
+    width: '640',
+    videoId: 'FyASdjZE0R0'
+}, {
+    id: 'player2',
+    height: '390',
+    width: '640',
+    videoId: 'xe_iCkFsQKE'
+},{
+    id:'player3',
+    height:'390',
+    width:'640',
+    videoId:'ehToBz7zhqE'
+    
+},{
+id:"player4",
+height:"390",
+width:"640",
+videoId:'mk48xRzuNvA'
+},{id:'player5',
+height:'390',
+width:'640',
+    videoId:'EkHTsc9PU2A'}];
+function onYouTubeIframeAPIReady() {
+    if (typeof playerInfoList === 'undefined') return;
+    
+    for (var i = 0; i < playerInfoList.length; i++) {
+        var curplayer = createPlayer(playerInfoList[i]);
+        players[i] = curplayer;
+    }
+}
+var players = new Array();
+function createPlayer(playerInfo) {
+    return new YT.Player(playerInfo.id, {
+        height: playerInfo.height,
+        width: playerInfo.width,
+        videoId: playerInfo.videoId,
+    });
+}
+        </script>
+        
+        
+        </body>
+    
+</html>
